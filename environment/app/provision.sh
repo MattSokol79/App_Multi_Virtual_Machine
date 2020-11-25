@@ -16,8 +16,11 @@ sudo npm install pm2 -g
 
 sudo apt-get install nginx -y
 
-# Restart the nginx 
-sudo service nginx restart
+# DB HOST for Development Environment (Virtual machines)
+echo 'export DB_HOST=mongodb://192.168.10.200:27017/posts' >> ~/.bashrc
 
+cd /home/ubuntu/app
 
-
+sudo npm install
+sudo pm2 start app.js
+sudo systemctl restart nginx

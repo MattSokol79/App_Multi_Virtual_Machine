@@ -24,11 +24,6 @@ Db running on:
 - ip: 192.168.10.200
 
 **To see website working**
-1. In commandline/bash where vagrant file is `vagrant ssh app`
-2. Inside the VM, run `cd /home/ubuntu/app`
-3. Run `sudo npm install`
-4. Run `sudo npm start`
-
 The website will now be running on:
 - 192.168.10.100:3000
 - 192.168.10.100:3000/fibonacci/{index}
