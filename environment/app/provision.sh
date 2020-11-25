@@ -16,7 +16,7 @@ sudo npm install pm2 -g
 
 sudo apt-get install nginx -y
 
-# finally, restart the nginx service so the new config takes hold
+# Restart the nginx 
 sudo service nginx restart
 
 
